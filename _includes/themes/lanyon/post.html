@@ -4,6 +4,23 @@
   {{ content }}
 </div>
 
+<div class="pagination">
+  {% if page.previous %}
+    <a class="pagination-item older" href="{{ BASE_PATH }}{{ page.previous.url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if page.next %}
+    {% if site.pages == 2 %}
+      <a class="pagination-item newer" href="{{ BASE_PATH }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ BASE_PATH }}{{ page.next.url }}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
+
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
@@ -19,3 +36,6 @@
     {% endfor %}
   </ul>
 </div>
+<hr/>
+{% include JB/comments %}
+
