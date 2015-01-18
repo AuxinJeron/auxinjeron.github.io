@@ -25,15 +25,6 @@
 				<key>title</key>
 				<string>上海青企协</string>
 			</dict>
-			<dict>
-				<key>kind</key>
-				<string>display-image</string>
-				<!-- optional. indicates if icon needs shine effect applied. -->
-				<key>needs-shine</key>
-				<true/>
-				<key>url</key>
-				<string>https://auxinjeron.github.io/assets/app/JieLi/ios_57.png</string>
-			</dict>
 		</dict>
 	</array>
 </dict>

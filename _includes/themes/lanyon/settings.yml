@@ -1,0 +1,6 @@
+theme :
+  name : lanyon
+  base_path : themes/lanyon
+
+HEAD_HTML : themes/lanyon/head.html
+SIDEBAR_HTML : themes/lanyon/sidebar.html
