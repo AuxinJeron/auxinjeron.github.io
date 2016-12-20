@@ -115,18 +115,18 @@ group: navigation
   section {
       margin:150px auto;
       overflow:hidden;
-      width:300px;
+      width:100%;
   }
   
   section img.icon {
       border-radius:100%;
       -moz-border-radius:100%;
       -webkit-border-radius:100%;
-      left:calc(25%);
+      left:calc(50% - 75px);
       top:calc(35%);
       position:absolute;
-      width:100px;
-      height:100px;
+      width:150px;
+      height:150px;
   }
   
   section .title {
@@ -180,42 +180,21 @@ group: navigation
 
 <section>
 
-    <!-- insert:image (between "") -->
-    <img src="{{ BASE_PATH }}/assets/leon.jpg" class="icon" />
-    
-    <div class="title">
-        <!-- insert: page title-->
-        Leon Li
-    </div>
-    
-    <ul class="profile">
-    
-        <li>
-            <!-- insert: data -->
-            Your • Data • Here
-        </li>
-        
+  <!-- insert:image (between "") -->
+  <img src="{{ BASE_PATH }}/assets/leon.jpg" class="icon" />
 
-        <li class="desc">
-            <!-- insert: description -->
-            <p>Paragraph 1</p>
-            <p>Paragraph 2</p>
-            <blockquote>You can also use blockquotes</blockquote>
-            <ul>
-                <li>Lists as well</li>
-            </ul>
-        </li>
-        
-        <li>
-            <!-- insert: links -->
-            <a href="/">back to blog</a>
-            <a href="/ask">message</a>
-            <a href="/">link 1</a>
-            <a href="/">link 2</a>
-        </li>
-        
-    </ul>    
+  <div class="media">
+  <div style="position: relative; left: 0px">
+    <div class="media-body">
+      <!-- <blockquote>
+        <p>Touble is my friend.</p>
+      <small>From the song <em>'Trouble is a friend'</em> of Lenka</small>
+      </blockquote> -->
+      <p><strong>Name: </strong>Leon Li</p> 
+      <p><strong>Email: </strong>leon.auxinjeron@gmail.com</p>
+      <p><strong>Master Education: </strong>University of Florida</p> 
+      <p><strong>Bachelor Education: </strong>Shanghai Jiaotong University</p> 
     </div>
+  </div>
+  </div>
 </section>
-
-<div class="cr"><a href="http://sceawung.tumblr.com">@ scw</a></div>
