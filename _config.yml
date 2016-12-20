@@ -71,6 +71,7 @@ JB :
   archive_path: /archive/index.html
   categories_path : /categories/index.html
   tags_path : /tags/index.html
+  projects_path: /projects/index.thml
   atom_path : /atom.xml
   rss_path : /rss.xml
 
