@@ -6,7 +6,7 @@ group: navigation
 ---
 {% include JB/setup %}
 
-<div class="media">
+<!-- <div class="media">
   <a class="pull-left" href="#">
     <img class="img-thumbnail" src="{{ BASE_PATH }}/assets/leon.jpg" alt="Leon" width="200" height="200">
   </a>
@@ -22,4 +22,200 @@ group: navigation
   		</blockquote>
   	</div>
   </div>
-</div>
+</div> -->
+
+    <!-- 
+    
+    monologue 
+    (c) sceawung
+    2015
+    
+    --
+    
+    ctrl + f "change" to find changeable elements (colors, etc)
+    ctrl + f "insert" to edit the content (title, description, etc)
+    
+    don't forget to wrap your text in <p></p> (paragraph tags)
+    
+    --
+    
+    do not remove my credits. do not alter and/or redistribute. by using my codes, you agree to the terms of use.
+
+  -->
+
+  <link rel="shortcut icon" href="{Favicon}">
+
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    
+  <style type="text/css">
+
+    ::selection {
+        background:#000;
+        color:#ffffff;
+    }
+               
+    ::-moz-selection {
+        background:#000;
+        color:#ffffff;
+    }
+
+  body {
+    background-color:#fff; /* change: bg color */
+    background-image:url(''); /* change: bg image */
+    background-attachment:fixed;
+    background-repeat:repeat;
+    cursor:default;
+    font-family:'Inconsolata', Consolas, Courier New, monospace;
+    line-height:1.2rem;
+    word-wrap:break-word;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    text-size-adjust:100%;
+  }
+  ol li {list-style-type:decimal-leading-zero;}
+    
+  a {
+    cursor:help;
+    text-decoration:none;
+  }
+  a img, img a {margin:0; padding:0; border:none;}
+  
+  b {
+      font-weight:700;
+  }
+  
+  blockquote {
+      border-left:1px solid #eee;
+      margin:10px 0;
+      padding:0 10px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+      font-size:1.25em;
+      font-weight:700;
+  }
+  
+  p {
+      margin:0.5rem 0;
+  }
+  p:first-of-type {margin-top:0; padding-top:0;}
+  p:last-of-type {margin-bottom:0; padding-bottom:0;}
+  
+  .cr {
+      font-family:calibri;
+      font-size:8px;
+      letter-spacing:1px;
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      text-transform:uppercase;
+  }
+  .cr a {color:#777; border-bottom:1px solid #88d8c0;}
+  
+  section {
+      margin:150px auto;
+      overflow:hidden;
+      width:300px;
+  }
+  
+  section img.icon {
+      border-radius:100%;
+      -moz-border-radius:100%;
+      -webkit-border-radius:100%;
+      left:calc(25%);
+      top:calc(35%);
+      position:absolute;
+      width:100px;
+      height:100px;
+  }
+  
+  section .title {
+      color:#000; /* change: title color */
+      font-family:Arial;
+      font-size:20px;
+      font-weight:bold;
+      margin-bottom:15px;
+  }
+  
+  ul.profile {
+      font-size:10px;
+      margin:10px 0;
+      padding:0;
+  }
+  
+  ul.profile a {
+      border-bottom:1px solid #ccc; /* change: link border color */ 
+      color:#999; /* change: link color */
+      margin-right:5px;
+  }
+  
+  ul.profile a:hover {
+      border-bottom-color:#eee; /* change: link border hover */ 
+      color:#ccc; /* change: link hover color */ 
+  }
+  
+  ul.profile li {
+      color:#999; /* change: data color */ 
+      list-style-type:none;
+  }
+  
+  ul.profile li.desc {
+      color:#333!important; /* change: description color */ 
+      padding:10px 0;
+  }
+  
+  ul.profile li.desc ul {
+      margin:10px 0;
+  }
+  
+  ul.profile li.desc ul li {
+      color:#333;
+      list-style-type:square;
+  }
+  
+      
+  </style>
+    
+</head>
+
+<section>
+
+    <!-- insert:image (between "") -->
+    <img src="{{ BASE_PATH }}/assets/leon.jpg" class="icon" />
+    
+    <div class="title">
+        <!-- insert: page title-->
+        Leon Li
+    </div>
+    
+    <ul class="profile">
+    
+        <li>
+            <!-- insert: data -->
+            Your • Data • Here
+        </li>
+        
+
+        <li class="desc">
+            <!-- insert: description -->
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <blockquote>You can also use blockquotes</blockquote>
+            <ul>
+                <li>Lists as well</li>
+            </ul>
+        </li>
+        
+        <li>
+            <!-- insert: links -->
+            <a href="/">back to blog</a>
+            <a href="/ask">message</a>
+            <a href="/">link 1</a>
+            <a href="/">link 2</a>
+        </li>
+        
+    </ul>    
+    </div>
+</section>
+
+<div class="cr"><a href="http://sceawung.tumblr.com">@ scw</a></div>
