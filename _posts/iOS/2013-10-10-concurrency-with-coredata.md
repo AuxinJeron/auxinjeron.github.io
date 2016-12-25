@@ -47,7 +47,7 @@ The most problem in code above is that i use a NSManagedObject from the main thr
 
 ## Links
 
-[reference 1][2]
+[Core data statement is still active][2]
 
  [1]: https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CoreData/Articles/cdConcurrency.html#//apple_ref/doc/uid/TP40003385-SW1
  [2]: http://stackoverflow.com/questions/7883746/core-data-statement-is-still-active

@@ -5,10 +5,8 @@ tags : [iOS, learning, apple, tutorial]
 ---
 {% include JB/setup %}
 
-##The key word, \_\_storng and \_\_autoreleasing
 
-
-###Pass a pointer reference as argument
+## **Pass a pointer reference as argument**
 
 
 By default, we pass a pointer reference using Objective-C like this:
@@ -29,7 +27,7 @@ So we can also add key word \_\_strong explictly by ourself:
     - (void) testReference:(NSObject * __strong *) object
 
 
-###What's the difference?
+## **What's the difference?**
 
 
     NSObject *object = [[NSObject alloc] init];
@@ -54,12 +52,12 @@ But \_\_strong will pass the origin reference to the function.
 It is because if using \_\_strong as default one, some references of weak pointer may cause logic problem when using a \_\_strong pointer to copy their value.
 
 
-###Links
+## **Links**
 
 
-[reference 1][1]
+[What are the advantages of declaring method arguments autoreleasing][1]
 
-[reference 2][2]
+[Handling pointer to pointer ownership issues in arc][2]
 
  [1]: http://stackoverflow.com/questions/14554121/what-are-the-advantages-of-declaring-method-arguments-autoreleasing
  [2]: http://stackoverflow.com/questions/8814718/handling-pointer-to-pointer-ownership-issues-in-arc
