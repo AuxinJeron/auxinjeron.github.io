@@ -130,3 +130,7 @@ JB :
   
   theme : lanyon
 
+  # Plugins
+  gems:
+    - jekyll-feed
+
