@@ -9,6 +9,13 @@
       inlineMath: [ ['$','$'], ['\(', '\)'] ],
       displayMath: [ ['$$','$$'] ],
       processEscapes: true,
+    },
+    "HTML-CSS" : {
+       availableFonts : ["STIX"],
+       preferredFont : "STIX",
+       webFont : "STIX-Web",
+       imageFont : null,
+       scale: 80
     }
   });
 </script>

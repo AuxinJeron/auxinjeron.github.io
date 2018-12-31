@@ -551,3 +551,26 @@ a.pagination-item:hover {
 .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
+
+/* Add this to make image align to center */
+img[src*='#center'] { 
+    display: block;
+    margin: auto;
+}
+
+/* Add this to make image caption align to center */
+.image-caption {
+  text-align: center;
+  font-size: .8rem;
+  color: light-grey;
+}
+
+
+.image-wrapper {
+    text-align: center;
+
+    .image-caption {
+        color: $grey-color;
+        margin-top: $spacing-unit / 3;
+    }
+}
