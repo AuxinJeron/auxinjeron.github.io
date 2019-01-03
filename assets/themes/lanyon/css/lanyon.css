@@ -574,3 +574,10 @@ img[src*='#center'] {
         margin-top: $spacing-unit / 3;
     }
 }
+
+/* Add this to enable horizontal code scrolling bar */
+pre.highlight {
+    word-wrap: normal;
+    overflow-x: auto;
+    white-space: pre;
+}
