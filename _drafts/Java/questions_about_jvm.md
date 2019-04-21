@@ -13,6 +13,7 @@ http://psy-lob-saw.blogspot.com/2013/05/know-thy-java-object-memory-layout.html
 https://www.slideshare.net/RednaxelaFX/hotspot-vm20120303
 
 # how is the dynamic link between classes work? 
+internal java: replace symbol with real reference when the first active use 
 
 # how jvm work?
 https://www.youtube.com/watch?v=ZBJ0u9MaKtM
@@ -173,3 +174,7 @@ exclusion, which is supported in the Java Virtual Machine via object locks, enab
 independently work on shared data without interfering with each other. Cooperation, which is supported
 in the Java Virtual Machine via the wait and notify methods of class Object, enables threads to work
 together towards a common goal.
+
+# Dtrace 
+http://dtrace.org/guide/preface.html#preface
+analysize performance of your system
