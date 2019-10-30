@@ -2,6 +2,7 @@
 layout: post
 category : Algorithm
 tags : [binary search, algorithm, tutorial]
+use_math : true
 ---
 {% include JB/setup %}
 

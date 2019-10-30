@@ -28,5 +28,7 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 
   <!-- mathjax -->
-  {% include JB/mathjax_support %}
+  {% if page.use_math == true %}
+    {% include JB/mathjax_support %}
+  {% endif %}
 </head>
