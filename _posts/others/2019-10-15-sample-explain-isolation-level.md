@@ -1,6 +1,6 @@
 ---
 layout: post
-category : 
+category :
 tags : [learning, tutorial]
 use_math : true
 ---
@@ -28,10 +28,10 @@ Transaction B is trying to query the balance for account "1111"
 
 ```
 BEGIN;
-SELECT balance FROM accounts WHERE acctnum = 1111; 
+SELECT balance FROM accounts WHERE acctnum = 1111;
 COMMIT;
 ```
-If the `SELECT` of Transaction B is executed between the two `UPDATE` of Transaction A, then Transaction B would read the uncommited balance of account "1111". If Transaction A is commited successfully, then the result is the same. But if Transacation A failed to be commited, then the result of `SELECT` in Transacation B would be a wrong value since the value has been commited to the perminant table at the end. 
+If the `SELECT` of Transaction B is executed between the two `UPDATE` of Transaction A, then Transaction B would read the uncommited balance of account "1111". If Transaction A is commited successfully, then the result is the same. But if Transacation A failed to be commited, then the result of `SELECT` in Transacation B would be a wrong value since the value has been commited to the perminant table at the end.
 
 ### **nonrepeatable read**
 A transaction re-reads data it has previously read and finds the data has been modified by another transaction(that committed since the initial read).
@@ -48,8 +48,8 @@ Transaction B is trying to query the balance for account "1111" twiice
 
 ```
 BEGIN;
-SELECT balance FROM accounts WHERE acctnum = 1111; 
-SELECT balance FROM accounts WHERE acctnum = 1111; 
+SELECT balance FROM accounts WHERE acctnum = 1111;
+SELECT balance FROM accounts WHERE acctnum = 1111;
 COMMIT;
 ```
 If the `COMMIT` of Transaction A happened between the two `SELECT` of transaction B, then the results of two `SELECT` in Transaction B would be different.
@@ -81,7 +81,7 @@ Sometimes, it would be hard to tell the difference between **nonrepeatable read*
 For example, in the example of **nonrepeatable read**, if we add a lock to index account "1111" when Transcaction B first `SELECT` the record of account "1111", then transaction A cannot be commited since it would be told it is trying to update a locked record and transaction A would be rolled back. In the example of **phantom read**, we ain't able to add a similar lock when transaction B first `SELECT` since we don't even have the record account "1111" at our table at that time.
 
 ### **serialization anomaly**
-The result of successfully committing a group of transactions is inconsistent with all possible ordering of running those transactions one at a time.
+The result of successfully committing a group of transactions is inconsistent with all possible ordering of running those transactions one at a time. Serializabilty is the ability to ensure that a schedule for executing concurrent transactions is equivalent to oen that executes the transactions serially in some order.
 
 *Example*:
 Transaction A is trying to insert the account of account "1111"
@@ -100,7 +100,7 @@ SELECT balance FROM accounts WHERE acctnum = 1111;
 SELECT balance FROM accounts WHERE acctnum = 1111;
 COMMIT;
 ```
-If we changed the order of Transcation A and Transcation B to be commited, the final result would be different.
+One good serializabilty is to make sure the result of concurrent running transaction A and transaction B has the same result as running them in order `A->B` or `B->A`.
 
 ## **Isolation Level**
 The following table is used to define the general isolation levels for the database system. Some database systems, such as postgresql, may have their own definition tables.
