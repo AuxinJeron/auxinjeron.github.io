@@ -113,4 +113,7 @@ The following table is used to define the general isolation levels for the datab
 | Serializable | Not possible | Not possible | Not possible | Not possible |
 
 
-[1]: https://www.postgresql.org/docs/9.5/transaction-iso.html
+## References
+[Postgresql](https://www.postgresql.org/docs/9.5/transaction-iso.html)
+
+[Transaction, Isolation, Lock](https://www.jianshu.com/p/cb97f76a92fd)
