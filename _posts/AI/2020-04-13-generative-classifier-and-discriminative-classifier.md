@@ -18,7 +18,7 @@ So, I will try to sum up some of my findings during my exploring the correct pat
 
 There is a dataset $D=\\{(\mathbf{x_1},y_1),...,(\mathbf{x_n},y_n)\\}$ drawn from distribution $P(X,Y)$, and our purpose is to estimate $P(Y\|X)$ so that we can predicate the label $y$ from any features $\mathbf{x}$.
 
-Both **Generative Classifier** and **Discriminative Classifier** are used to learn the **conditioanl probability** $P(Y\|X)$. But their way to learn that is different. A **Generative Classifier** first learns the **joint probability** $P(X, Y)$ and uses the **Bayes Theorem** to calculate the **conditional probability** $P(Y\|X)$ while A **Discriminative Classifier** learns the $P(Y\|X)$ directly.
+Both **Generative Classifier** and **Discriminative Classifier** are used to learn the **conditional probability** $P(Y\|X)$. But their way to learn that is different. A **Generative Classifier** first learns the **joint probability** $P(X, Y)$ and uses the **Bayes Theorem** to calculate the **conditional probability** $P(Y\|X)$ while A **Discriminative Classifier** learns the $P(Y\|X)$ directly.
 
 And **MLE** and **MAP** are the method used to learn the **joint probability** or **conditional probability** we mentioned in that two classifiers.
 
@@ -43,7 +43,7 @@ So we need to learn $P(Y)$ and $P(X\|Y)$ first, the followings are the steps
 2. Estimate parameters $\theta$ of $P(Y \| \theta)$ and $P(X\|Y, \theta)$ based on the dataset $D$.
     * We can use either **MLE** or **MAP** to learn
     * If use **MLE**, we are trying to find the $\theta = argmax_{\theta}{P(D\|\theta)}$
-    * If use **MAP**, we are tryign to find the $\theta = argmax_{\theta}{P(\theta \| D)} = argmax_{\theta}{P(D\|\theta)P(\theta)}$
+    * If use **MAP**, we are trying to find the $\theta = argmax_{\theta}{P(\theta \| D)} = argmax_{\theta}{P(D\|\theta)P(\theta)}$
     * If use **MAP**, we will be Bayesian since we believe there is a distribution $P(\theta)$ for $\theta$.
 
 3. Use Bayes rule to calculate $P(X\|Y)$
