@@ -64,5 +64,6 @@ In **Discriminative Classifier**, the **conditional probability** $P(Y\|X)$ is l
 
 ## **Reference**
 
+[https://machinelearningmastery.com/logistic-regression-with-maximum-likelihood-estimation/](https://machinelearningmastery.com/logistic-regression-with-maximum-likelihood-estimation/)
 [http://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote04.html](http://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote04.html)
 [https://medium.com/@mlengineer/generative-and-discriminative-models-af5637a66a3](https://medium.com/@mlengineer/generative-and-discriminative-models-af5637a66a3)
